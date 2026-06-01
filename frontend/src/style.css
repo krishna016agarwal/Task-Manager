@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-pill {
+  background: #edf2ff;
+  color: #2146c7;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: #2146c7;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e9edf7;
+  color: #172033;
+}
+
+.btn-danger {
+  background: #e03131;
+  color: white;
+}
+
+.full {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.hero {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero-card {
+  max-width: 850px;
+  background: white;
+  padding: 50px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card h1 {
+  font-size: 46px;
+  margin-bottom: 16px;
+}
+
+.hero-card p {
+  font-size: 18px;
+  color: #5c6475;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.auth-wrapper {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.auth-card,
+.task-form,
+.task-list {
+  background: white;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.07);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+}
+
+.auth-card h2,
+.task-form h2,
+.task-list h2 {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 7px;
+  font-weight: 700;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d7ddea;
+  border-radius: 12px;
+  outline: none;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2146c7;
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.auth-card a {
+  color: #2146c7;
+  font-weight: 700;
+}
+
+.dashboard {
+  padding: 35px 7%;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 36px;
+}
+
+.dashboard-header p {
+  color: #5c6475;
+  margin-top: 8px;
+}
+
+.admin-note {
+  color: #2146c7 !important;
+  font-weight: 700;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.message {
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin: 12px 0;
+  font-weight: 700;
+}
+
+.message.success {
+  background: #d3f9d8;
+  color: #0b7285;
+}
+
+.message.error {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
+
+.task-list {
+  min-height: 400px;
+}
+
+.task-card {
+  border: 1px solid #e3e8f4;
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 16px;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-card h3 {
+  margin-bottom: 8px;
+}
+
+.task-card p {
+  color: #5c6475;
+  margin-bottom: 10px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.badge.low {
+  background: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.badge.medium {
+  background: #fff3bf;
+  color: #e67700;
+}
+
+.badge.high {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
+
+.status {
+  display: inline-block;
+  margin: 8px 0;
+  font-weight: 700;
+  color: #2146c7;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+@media (max-width: 850px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card h1 {
+    font-size: 34px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
