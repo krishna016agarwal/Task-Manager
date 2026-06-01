@@ -599,7 +599,6 @@ Value: Bearer your_jwt_token
 
 The project follows a modular architecture. Each feature is separated into its own module with route, controller, service, model, and validation files.
 
-This structure makes the backend easier to maintain and scale as more features are added.
 
 ### Possible Future Improvements
 
@@ -615,53 +614,6 @@ This structure makes the backend easier to maintain and scale as more features a
 
 ---
 
-## Deployment
-
-## Backend Deployment
-
-The backend can be deployed on:
-
-- Render
-- Railway
-- Cyclic
-- AWS EC2
-- VPS
-
-Required backend environment variables:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_atlas_url
-JWT_SECRET=your_production_secret
-JWT_EXPIRES_IN=1d
-CLIENT_URL=your_frontend_url
-```
-
-## Frontend Deployment
-
-The frontend can be deployed on:
-
-- Vercel
-- Netlify
-- Render
-
-Required frontend environment variable:
-
-```env
-VITE_API_URL=your_backend_url/api/v1
-```
-
----
-
-## Local Development URLs
-
-```txt
-Backend: http://localhost:5000
-Frontend: http://localhost:5173
-API Base URL: http://localhost:5000/api/v1
-```
-
----
 
 ## Author
 
